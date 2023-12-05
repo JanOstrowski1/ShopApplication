@@ -1,4 +1,9 @@
-var builder = WebApplication.CreateBuilder(args);
+using WebApplication.Models;
+
+var builder = Microsoft.AspNetCore.Builder.WebApplication.CreateBuilder(args);
+
+builder.Services.AddScoped<ICategoryRepository, MockCategoryRepository>();
+builder.Services.AddScoped<IPieRepository, MockPieRepository>();
 
 builder.Services.AddControllersWithViews();
 

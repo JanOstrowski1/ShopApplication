@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="~/css/site.css" rel="stylesheet"/>
+    <base href="/"/>
+    <title>Bathany's Pie Shop</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-primary"
+                 aria-label="Bethany's Pie Shop navigation header">
+                <div class="container-xl">
+                    <a class="navbar-brand" asp-controller="Home" asp-action="Index">
+                        <img src="images/bethanys-pie-shop-logo_horiz-white.png" width="151" height="47" class="d-inline-block align-top mb-2 mt-1"
+                             alt="Bethany's Pie Shop Logo">
+                    </a>
+
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+                            aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarCollapse">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+    @RenderBody()
+    </div>
+</body>
+</html>
